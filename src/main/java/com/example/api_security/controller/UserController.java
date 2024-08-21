@@ -20,7 +20,9 @@ public class UserController {
         String encodedEmail = Encode.forHtml(userDTO.getEmail());
         System.out.println(encodedEmail);
         System.out.println(encodedEmail);
+
         System.out.println("am showing encoded email"+encodedEmail);
+
 
 
 
