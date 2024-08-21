@@ -19,6 +19,9 @@ public class UserController {
         // Encode the email before returning it to prevent XSS attacks
         String encodedEmail = Encode.forHtml(userDTO.getEmail());
         System.out.println(encodedEmail);
+        System.out.println(encodedEmail);
+        System.out.println("am showing encoded email"+encodedEmail);
+
 
 
         return new ResponseEntity<>("Valid email: " + encodedEmail, HttpStatus.OK);
