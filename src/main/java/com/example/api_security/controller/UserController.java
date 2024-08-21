@@ -20,6 +20,7 @@ public class UserController {
         String encodedEmail = Encode.forHtml(userDTO.getEmail());
         System.out.println(encodedEmail);
         System.out.println(encodedEmail);
+        System.out.println("am econded email"+encodedEmail);
 
 
         return new ResponseEntity<>("Valid email: " + encodedEmail, HttpStatus.OK);
